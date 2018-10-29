@@ -8,6 +8,13 @@ spring:
     url: jdbc:mysql://192.168.1.207:3306/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+  cloud:
+    bus:
+    trace:
+      enabled: true
+  rabbitmq:
+    host: 192.168.192.131
+    port: 5672
 eureka:
   client:
     service-url:
